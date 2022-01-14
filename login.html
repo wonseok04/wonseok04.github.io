@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>로그인</title>
+  <style>
+    .login_box {
+      width: 300px;
+      height: 400px;
+      margin-top: 50px;
+      margin-left: 35%;
+      text-align: center;
+      
+    }
+    #login_header {
+      margin-top: 64px;
+      margin-bottom: 46px;
+    }
+    #id_input_box, #pw_input_box {
+      margin-bottom: 14px;
+      width: 180px;
+      height: 26px;
+      border: 0;
+      border-bottom: 1px solid lightgray;
+    }
+    #login_button {
+      margin-top: 40px;
+      border: 0;
+      height: 24px;
+      width: 120px;
+    }
+    #signup_button {
+      margin-top: 8px;
+      border: 0;
+      height: 24px;
+      width: 120px;
+    }
+  </style>
+  <section>
+    <button id="backbutton" onClick="location.href='mainpage.html'">뒤로가기</button>
+  </section>
+  <script>
+    function buttonClicked(){
+      const id_input_box=document.querySelector('#id_input_box').value;
+      const pw_input_box=document.querySelector('#pw_input_box').value;
+      if(id_input_box && pw_input_box){
+        alert("로그인 완료")
+        location.href ="mainpage.html"
+      }
+      else if(id_input_box &&! pw_input_box){
+        alert("비밀번호를 입력하세요.")
+      }
+      else{
+        alert("아이디를 입력하세요.")
+      }
+
+    }
+
+  </script>
+  <link rel="stylesheet" href="로그인.css">
+</head>
+<body>
+<div class="login_box">
+  <h1 id="login_header">로그인</h1>
+  <input id="id_input_box" type="text" placeholder="ID를 입력하세요">
+  <input id="pw_input_box" type="password" placeholder="PW를 입력하세요"><br>
+  <button id="login_button" onclick="buttonClicked()">로그인</button><br>
+  <button id="signup_button" onclick="location.href='signupPage.html'">회원가입</button>
+</div>
+</body>
+</html>

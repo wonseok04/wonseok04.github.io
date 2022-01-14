@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'establishRetrosansOTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishRetrosansOTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.sws{font-family: "establishRetrosansOTF";}
+
+header{
+    border: 3px solid rgb(75, 70, 70);
+    margin: 5px;
+    text-align: center;
+}
+
+nav{
+    border-width: 3px;
+    text-align: left;
+    display: inline-block;
+    size: 18px;
+}
+
+.sites {
+    border-width: 3px;
+    text-align: left;
+    display: inline-block;
+}
+
+section{
+}
+div{
+    text-align: left;
+    font-family: "SBAggroB";
+    font-size: x-large;
+    margin: 5px;
+}
+
+footer{
+    border: 3px solid rgb(75, 70, 70);
+}
+
+#loginbutton {
+    margin-left: 90%;
+}
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.ww{
+    display: inline;
+}
+p{
+    font-size: x-large;
+    font-family: "establishRetrosansOTF";
+}
+.ee{
+    border: 3px solid rgb(75, 70, 70);
+}
+.e{
+    border: 3px solid rgb(75, 70, 70);
+}
+.dd{
+    border: 3px solid rgb(75, 70, 70);
+    display: flex;
+    justify-content:space-around;
+}
