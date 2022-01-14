@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .name_box{
+            width: 300px;
+            height: 400px;
+            margin-top: 50px;
+            margin-left: 35%;
+            text-align: center;
+        
+        }
+        #id_header{
+            margin-top: 64px;
+            margin-bottom: 46px;
+        }
+        #id_input_box {
+            margin-bottom: 14px;
+            width: 180px;
+            height: 26px;
+            border: 0;
+            text-align: center;
+            border-bottom: 1px solid lightgray;
+        }
+        #name_input_box{
+            margin-bottom: 14px;
+            width: 180px;
+            height: 26px;
+            border: 0;
+            text-align: center;
+            border-bottom: 1px solid lightgray;
+        }
+        #pw_input_box{
+            margin-bottom: 14px;
+            width: 180px;
+            height: 26px;
+            border: 0;
+            text-align: center;
+            border-bottom: 1px solid lightgray;
+        }
+        #signup_button {
+            margin-top: 8px;
+            border: 0;
+            height: 24px;
+            width: 120px;
+        }
+    </style>
+    <section>
+        <button id="backbutton" onClick="location.href='mainpage.html'">뒤로가기</button>
+    </section>
+    <script>
+        function signButtonClicked() {
+            const name_input_box=document.querySelector('#name_input_box').value;
+            const id_input_box=document.querySelector('#id_input_box').value;
+            const pw_input_box=document.querySelector('#pw_input_box').value;
+            if ((name_input_box&&id_input_box)&&pw_input_box){
+                alert("회원가입이 완료되었습니다");
+                location.href ="login.html"
+            }
+            else if ((name_input_box&&!id_input_box)&&pw_input_box){
+                alert("아이디를 입력하세요.")
+            }
+            else if ((name_input_box&&id_input_box)&&!pw_input_box){
+                alert("비밀번호를 입력하세요.")
+            }
+            else{
+                alert("이름은 입력하세요.")
+            }
+        }
+    </script>
+<link rel="stylesheet" href="회원가입.css">
+</head>
+<body>
+    <div class="name_box">
+        <h1 id="login_header">회원가입</h1>
+        <input id="name_input_box" type="text" placeholder="이름"><br>
+        <input id="id_input_box" type="text" placeholder="아이디"><br>
+        <input id="pw_input_box" type="password" placeholder="비밀번호"><br>
+        <button id="signup_button" onclick="signButtonClicked()">회원가입</button>
+    </div>
+</body>
+</html>

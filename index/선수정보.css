@@ -1,0 +1,20 @@
+.image {
+    float: left; 
+    border-style: solid;
+    border-width: 3px;
+    border-color: gray;
+    margin: 5px;
+    text-align: center;
+}
+
+.player {
+    width: 600px;
+    height: 223px;
+    background-color: gainsboro;
+    border: 3px solid black;
+    margin: 3px;
+    clear: both;
+}
+.ae{
+    text-align: right;
+}
